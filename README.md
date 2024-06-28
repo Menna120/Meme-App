@@ -1,8 +1,9 @@
 task 1 "Meme App"
 
 
-![Screenshot_20240627-211700 (Small)](https://github.com/Menna120/Meme-App/assets/94606987/0b30b94c-2a61-44bc-871d-a157704871b8)
+![Screenshot_20240627-211700 (Small) (Custom)](https://github.com/Menna120/Meme-App/assets/94606987/78307cf4-a1e3-4035-8b21-a011434ef6a3)
 
 
 
-![Screenshot_20240627-211621](https://github.com/Menna120/Meme-App/assets/94606987/e1743d73-ef13-4502-b24f-97dee019d1ec)
+![Screenshot_20240627-211621 (Custom)](https://github.com/Menna120/Meme-App/assets/94606987/348cbeaa-d91e-4dd7-bd80-a0df62d81662)
+
