@@ -8,8 +8,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.meme_app.databinding.MemeItemBinding
 
 class MemeAdapter(
-    private val memeItems: List<MemeItem>, private val fragmentManager: FragmentManager
-) : RecyclerView.Adapter<MemeAdapter.CardViewHolder>() {
+    private val memeItems: List<MemeItem>,
+    private val fragmentManager: FragmentManager
+) :
+    RecyclerView.Adapter<MemeAdapter.CardViewHolder>() {
 
     class CardViewHolder(val binding: MemeItemBinding) : RecyclerView.ViewHolder(binding.root)
 
@@ -28,8 +30,11 @@ class MemeAdapter(
                 }
                 val imageFullScreenFragment = ImageFullScreenFragment()
                 imageFullScreenFragment.arguments = bundle
-                fragmentManager.beginTransaction().replace(R.id.main, imageFullScreenFragment)
-                    .addToBackStack(null).commit()
+                fragmentManager
+                    .beginTransaction()
+                    .replace(R.id.main, imageFullScreenFragment)
+                    .addToBackStack(null)
+                    .commit()
             }
         }
     }
