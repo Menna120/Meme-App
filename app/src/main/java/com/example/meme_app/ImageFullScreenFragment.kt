@@ -21,7 +21,7 @@ class ImageFullScreenFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val imageResId = arguments?.getInt("imageResId") ?: 0
+        val imageResId = arguments?.getInt(getString(R.string.image_res_id)) ?: 0
         binding.fullScreenMeme.setImageResource(imageResId)
         binding.backArrow.setOnClickListener {
             requireActivity().supportFragmentManager.popBackStack()
