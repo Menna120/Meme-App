@@ -23,5 +23,5 @@ val MEME_ITEMS = listOf(
     MemeItem(R.drawable.image_16),
     MemeItem(R.drawable.image_17),
     MemeItem(R.drawable.image_18),
-    MemeItem(R.drawable.image_19)
+    MemeItem(R.drawable.image_19),
 )
