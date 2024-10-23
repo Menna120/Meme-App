@@ -4,6 +4,8 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
 import com.example.meme_app.databinding.FragmentImageFullScreenBinding
 
@@ -25,6 +27,11 @@ class ImageFullScreenFragment : Fragment() {
         binding.fullScreenMeme.setImageResource(imageResId)
         binding.backArrow.setOnClickListener {
             requireActivity().supportFragmentManager.popBackStack()
+        }
+        ViewCompat.setOnApplyWindowInsetsListener(binding.backArrow) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, 0)
+            insets
         }
     }
 
