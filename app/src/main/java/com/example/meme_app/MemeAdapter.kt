@@ -10,8 +10,8 @@ class MemeAdapter(
     private val listener: OnMemeClickListener, private val memeItems: List<MemeItem>
 ) : RecyclerView.Adapter<MemeAdapter.ViewHolder>() {
 
-    class ViewHolder(
-        private val listener: OnMemeClickListener, private val binding: MemeItemBinding
+    inner class ViewHolder(
+        private val binding: MemeItemBinding
     ) : RecyclerView.ViewHolder(binding.root) {
         fun bind(item: MemeItem) {
             binding.memeImage.apply {
@@ -26,7 +26,7 @@ class MemeAdapter(
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val binding = MemeItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-        return ViewHolder(listener, binding)
+        return ViewHolder(binding)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
